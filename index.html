@@ -1,29 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>FocusFaerie</title>
-        <link rel="stylesheet" href="style.css">
-    </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FocusFaerie</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
-    <body>
+    <main class="game-container">
+        <header class="game-header">
+            <img src="assets/ui/banner.png" class="logo" alt="FocusFaerie Banner">
+            <div class="progress-bar-container"></div>
+        </header>
 
-        <main class="game-container">
-            <header class="game-header">
+        <section class="stage">
+            <div class="timer-display">
+                <span id="time">25:00</span>
+            </div>
 
-                //banner when drawn here
-                <img src="assets/ui/banner.png"
-                <div class="progress-bar-container"></div>
-            </header>
+            <div class="character-container">
+                <img src="assets/character/base_chibi.png" id="base-chibi">
+                <img src="assets/character/outfit_default.png" id="clothing-layer">
+            </div>
+        </section>
 
-            
-        
-        </main>
-    </body>
+        <nav class="controls">
+            <button id="start-btn">Start Focus</button>
+            <button id="pause-btn">Pause</button>
+            <button id="customize-btn">Customize</button>
+        </nav>
+    </main>
 
-
-
-
-
+    <script src="script.js"></script>
+</body>
 </html>
